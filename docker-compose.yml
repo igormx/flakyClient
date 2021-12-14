@@ -1,0 +1,7 @@
+
+version: "3"
+services:
+  flaky-client:
+    build: ./
+    volumes:
+      - ./:/app
