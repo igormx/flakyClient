@@ -1,11 +1,8 @@
 package main
 
-import "fmt"
+import "flakyClient/services"
 
 func main() {
-	housesApiClient := NewHousesApiClient()
-	housesInfo, err := housesApiClient.FetchHousesInfoPage(1)
-
-	fmt.Printf("%v", housesInfo)
-	fmt.Println(err)
+	housesApiClient := services.NewHousesApiClient()
+	housesApiClient.GetHousesImages()
 }
